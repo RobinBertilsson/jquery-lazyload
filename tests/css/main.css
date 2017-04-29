@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+
+html, body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 25px 0;
+	background: #FAFAFA;
+	line-height: 1.5;
+	font-size: 18px;
+	color: #212121;
+	font-weight: lighter;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	color: #03A9F4;
+}
+
+pre {
+	white-space: normal;
+}
+
+a {
+	color: #03A9F4;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.wrapper {
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+.wrapper .header-img {
+	overflow: hidden;
+	color: #757575;
+	height: 390px;
+	width: 100%;
+}
+
+.wrapper .title-description {
+	font-weight: lighter;
+	font-size: 18px;
+	display: block;
+	line-height: 1;
+	color: #757575;
+}
+
+.wrapper .preamble {
+	font-size: 22px;
+}
+
+.wrapper .code-block {
+	background: #212121;
+	padding: 20px 20px 10px 20px;
+	margin-bottom: 20px;
+}
+
+.wrapper .code-block {
+	color: #CCC;
+}
+
+.wrapper .code-block .code-block-title {
+	color: #FFF;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+footer {
+	font-size: 14px;
+}
+
+footer .copy,
+footer .links {
+	float: left;
+	width: 50%;
+}
+
+footer .links {
+	text-align: right;
+	font-weight: bold;
+}
+
+footer .links a {
+	margin-left: 15px;
+}
+
+@media screen and (max-width: 980px) {
+	body {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	.wrapper .header-img {
+		height: 290px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.wrapper .header-img {
+		height: 200px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.wrapper .header-img {
+		height: 180px;
+	}
+}

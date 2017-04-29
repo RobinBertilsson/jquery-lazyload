@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lazy image loader</title>
+	<link rel="stylesheet" href="tests/css/main.css">
+	<link rel="stylesheet" href="dist/jquery.lazyload.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="wrapper">
+		<h1>
+			<span>Lazy image loader</span>
+			<small class="title-description">Plugin based on jQuery</small>
+		</h1>
+
+		<div class="header-img">
+			<img class="js-lazy-load lazy-load" src="tests/img/hero-img-sm.png" data-src="tests/img/hero-img-lg.png">
+		</div>
+
+		<main class="content">
+			<p class="preamble">
+				A really simple jQuery "addon" or "plugin" that allow's you to easily "lazy load" your heavy images with just one
+				single line of javascript, thats pretty simple, right?
+			</p>
+			<h2>How does it work?</h2>
+			<p>
+				It's pretty straightforward... The only difference is that you need two images instead of one, basicly you'll load 
+				the tiny low resolution -image on pageload which will take about 10 miliseconds, then once the page is loaded the 
+				framework will take care of the rest.  
+			</p>
+			<h2>How do i use it?</h2>
+			<div class="code-block">
+				<div class="code-block-title">HTML</div>
+				<pre>
+					&#60;img class="js-lazy-load lazy-load" src="low-res.png" data-src="high-res.png"&#62;
+				</pre>
+			</div>
+			<div class="code-block">
+				<div class="code-block-title">Javascript</div>
+				<pre>
+					$('.js-lazy-load').lazyLoad();
+				</pre>
+			</div>
+		</main>
+
+		<footer>
+			<div class="copy">Copyright &copy; Robin Bertilsson 2017. All rights reserved.</div>
+			<div class="links">
+				<a href="https://github.com/robinbertilsson" target="_blank">Github</a>
+				<a href="https://www.linkedin.com/in/robinbertilsson/" target="_blank">Linkedin</a>
+				<a href="https://www.instagram.com/robinbobban/" target="_blank">Instagram</a>
+			</div>
+		</footer>
+
+		<script src="tests/js/jquery-3.2.1.min.js"></script>
+		<script src="dist/jquery.lazyload.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$('.js-lazy-load').lazyLoad();
+			});
+		</script>
+	</div>
+</body>
+</html>
